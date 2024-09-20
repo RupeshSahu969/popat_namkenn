@@ -1,0 +1,119 @@
+/* Main navbar container */
+.navbar-container {
+  position: fixed; /* Fixes the navbar at the top */
+  top: 0; /* Aligns the navbar to the top of the page */
+  left: 0;
+  width: 100%; /* Ensures the navbar spans the full width of the viewport */
+  z-index: 1000;
+  background-color: white; /* Corrected typo */
+}
+
+/* Center logo with margin auto */
+.navbar-logo {
+  margin: auto;
+  height: 70px;
+  width: auto;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Navbar icons */
+.navbar-icons {
+  display: flex;
+  gap: 20px;
+}
+
+/* Navbar navigation links */
+.navbar-navs {
+  display: flex;
+  width: 90%;
+  gap: 200px;
+  margin: auto;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+/* Navigation items */
+.navbar-navs li {
+  text-decoration: none;
+  margin: 10px;
+}
+
+/* Links styling */
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* Extra navbar data section */
+.navbar-data {
+  height: 40px;
+  background-color: #fac44a;
+}
+
+/* Search bar hidden on mobile and tablet */
+@media (max-width: 768px) {
+  .search-bar {
+    display: none;
+  }
+  
+  .navbar {
+    width: 100%;
+    margin: auto;
+    border: none;
+  }
+
+  .navbar-navs {
+    flex-direction: column; /* Stack the links vertically */
+    gap: 20px;
+    text-align: left; /* Align text to the left for mobile */
+  }
+
+  .navbar-icons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .navbar-data {
+    display: none;
+  }
+  
+  /* Collapsed navbar for mobile */
+  .navbar-collapse {
+    display: block;
+    height: auto;
+  }
+}
+
+/* Styles for phones in portrait mode */
+@media (max-width: 599px) {
+  .navbar {
+    width: 100%;
+    margin: auto;
+  }
+
+  .navbar-navs {
+    flex-direction: column; /* Stack the links vertically */
+    gap: 20px;
+  }
+
+  .navbar-collapse {
+    display: block;
+  }
+
+  .navbar-logo {
+    height: 50px; /* Adjust logo size for smaller screens */
+  }
+  .navbar-icons {
+    display: flex;
+    gap: 1px;
+  }
+}

@@ -1,0 +1,46 @@
+.slider-container {
+    margin-top: 140px;
+    overflow: hidden; /* Prevent overflow for images */
+}
+
+.carousel-item img {
+    width: 100%; /* Make the image take full width */
+    height: 400px; /* Set fixed height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+@media (max-width: 599px) {
+    .slider-container {
+        margin-top: 100px;
+    }
+    .carousel-item img {
+        width: 100%; /* Make the image take full width */
+        height: 200px; /* Set fixed height */
+        object-fit: cover; /* Ensure the image covers the area without distortion */
+    }
+    .carousel-inner {
+        width: 100%; /* Ensure the inner carousel takes full width */
+    }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+    .slider-container {
+        margin-top: 100px;
+    }
+    .carousel-item img {
+        width: 100%; /* Make the image take full width */
+        height: 300px; /* Set fixed height */
+        object-fit: cover; /* Ensure the image covers the area without distortion */
+    }
+}
+
+@media (min-width: 600px) and (max-width: 899px) and (orientation: landscape) {
+    .slider-container {
+        margin-top: 100px;
+    }
+    .carousel-item img {
+        width: 100%; /* Make the image take full width */
+        height: 300px; /* Set fixed height */
+        object-fit: cover; /* Ensure the image covers the area without distortion */
+    }
+}

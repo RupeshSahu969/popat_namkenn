@@ -1,0 +1,220 @@
+/* Main container holding the grid of cards */
+.container-slider {
+  width:90%;
+  margin:auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: auto;
+    gap: 20px; 
+    padding: 20px; 
+  }
+  
+  /* Individual card styling */
+  .card-container {
+    width: 100%; 
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden; 
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor:pointer;
+    /* Animation on hover */
+  }
+  .card-container .div{
+    display: flex;
+   }
+  
+  /* Hover effect for cards */
+  .card-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  }
+  
+  /* Image styling inside the card */
+  .card-img-top {
+    width: 80%; 
+    height:300px;
+   margin-top:-20px;
+   margin-left:10px;
+    object-fit: cover; 
+  }
+  .icons{
+    margin-left:280px;
+    margin-top:10px;
+    width:30px;
+    height:30px;
+    /* border:1px solid red; */
+  }
+  
+  /* Card body styling */
+  .card-body {
+    text-align: center; 
+    padding: 10px 15px;
+  }
+  
+  /* Text inside the card */
+  .card-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Price styling */
+  .card-price {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Button styling */
+  .btn-primary {
+    width:100%;
+    background-color: white;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block; 
+    margin: 0 auto; 
+  }
+  
+  /* Button hover effect */
+  .card-container:hover .btn-primary {
+    background-color: red;
+    color: #fff; 
+  }
+
+  @media (max-width: 599px) {
+    .container-slider {
+      width:100%;
+    margin:auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: auto;
+  gap: 20px; 
+  padding: 20px; 
+}
+.card-container {
+  width: 100%; /* Full width within grid column */
+  /* height:100vh; */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.2s, box-shadow 0.2s; /* Animation on hover */
+}
+.card-img-top {
+  width: 70%; 
+  height:100px;
+  /* Make the image span the full width */
+  object-fit: cover; 
+}
+.icons{
+  margin-left:100px;
+  margin-top:10px;
+  width:15px;
+  height:15px;
+  border:1px solid black;
+}
+.card-text{
+  font-size:10px;
+}
+.btn-primary {
+  width:100%;
+  background-color: white;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block; /* Ensure the button is centered */
+  margin: 0 auto; /* Center the button horizontally */
+}
+
+/* Button hover effect */
+.card-container:hover .btn-primary {
+  background-color: red;
+  color: #fff; /* Optional: Change text color on hover */
+}
+
+
+  }
+  @media (min-width: 600px) and (max-width: 899px) {
+    /* Styles for phones in landscape mode */
+    .container-slider {
+      width:100%;
+    margin:auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Responsive columns */
+  grid-template-rows: auto;
+  gap: 20px; /* Spacing between the cards */
+  padding: 20px; /* Padding around the container */
+}
+.card-container {
+  width: 100%; /* Full width within grid column */
+  /* height:100vh; */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden; /* Ensure contents fit inside the card */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  transition: transform 0.2s, box-shadow 0.2s; /* Animation on hover */
+}
+.card-img-top {
+  width: 80%; 
+  height:300px;
+  /* Make the image span the full width */
+  object-fit: cover; /* Ensure the image fits without distortion */
+}
+.icons{
+  margin-left:300px;
+  margin-top:10px;
+  width:30px;
+    height:30px;
+  /* border:1px solid red; */
+}
+.btn-primary {
+  width:100%;
+  background-color: white;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block; /* Ensure the button is centered */
+  margin: 0 auto; /* Center the button horizontally */
+}
+
+/* Button hover effect */
+.card-container:hover .btn-primary {
+  background-color: red;
+  color: #fff; /* Optional: Change text color on hover */
+}
+
+.card-text{
+  font-size:12px;
+}
+
+  }
+  
+  
+  

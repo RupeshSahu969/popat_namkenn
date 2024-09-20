@@ -1,0 +1,21 @@
+.container-banner {
+    width:90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 10px; /* Space between the images */
+  }
+  
+  .banner-item img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: add some border-radius */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .container-banner {
+      grid-template-columns: 1fr; /* Stack images on top of each other */
+    }
+  }
+  

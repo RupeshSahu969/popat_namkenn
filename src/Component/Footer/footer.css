@@ -1,0 +1,134 @@
+.footer {
+  background-color: #3e4551; /* dark grey background */
+  color: white; /* white text */
+  padding: 20px 0;
+}
+
+footer h5 {
+  margin-bottom: 15px;
+  font-weight: bold;
+  cursor: pointer; /* Indicate that it's clickable */
+}
+
+footer p {
+  font-size: 14px;
+}
+
+footer ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: white; /* Updated to match the text color */
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.toggle-icon {
+  margin-left: 5px;
+  cursor: pointer; /* Change cursor to pointer for toggle */
+}
+
+/* Hide toggle icons on desktop view */
+@media (min-width: 769px) {
+  .toggle-icon {
+      display: none;
+  }
+}
+
+.btn-floating {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+
+/* Responsive for Tablet View */
+@media (max-width: 768px) {
+  .container .row {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  footer .col-md-6,
+  footer .col-lg-4,
+  footer .col-lg-2 {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  footer h5 {
+      font-size: 18px;
+  }
+
+  footer p {
+      font-size: 13px;
+  }
+
+  footer .btn {
+      margin: 10px auto;
+  }
+  .text-uppercase{
+    text-align: start;
+  }
+  .list-unstyled{
+    text-align: start;
+  }
+}
+
+/* Responsive for Mobile View */
+@media (max-width: 599px) {
+  .container .row {
+      flex-direction: column;
+      text-align: center;
+  }
+  .text-uppercase{
+    text-align: start;
+  }
+  .list-unstyled{
+    text-align: start;
+  }
+
+  footer .col-md-6,
+  footer .col-lg-4,
+  footer .col-lg-2 {
+      width: 100%;
+      margin-bottom: 20px;
+      text-align:start;
+  }
+
+  footer h5 {
+      font-size: 16px;
+  }
+
+  footer p {
+      font-size: 12px;
+  }
+
+  footer ul li {
+      margin-bottom: 8px;
+  }
+
+  footer .btn {
+      margin: 10px auto;
+  }
+
+  .btn-floating {
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+  }
+
+  .text-center p span {
+      display: block;
+      margin-bottom: 10px;
+  }
+}
